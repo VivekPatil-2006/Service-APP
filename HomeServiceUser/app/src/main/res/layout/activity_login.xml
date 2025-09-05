@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="NestService"
+        android:titleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/home_logo"
+                android:contentDescription="App Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NestService"
+                style="?attr/textAppearanceHeadline6"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Love your living!"
+                style="?attr/textAppearanceSubtitle1"
+                android:textColor="@color/black"
+                android:paddingTop="5dp" />
+
+            <!-- Mobile Number Input -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/india_flag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:textSize="20sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter your mobile number"
+                        app:endIconMode="clear_text"
+                        app:boxBackgroundMode="none"> <!-- Removes border -->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:textSize="20sp"
+                            android:minHeight="48dp"
+                        android:gravity="center_vertical"
+                        android:background="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Get Verification Code Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Verification Code"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                app:cornerRadius="12dp"
+                android:enabled="false"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <!-- Why Choose Us Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why Choose Us"
+                style="?attr/textAppearanceHeadline6"
+                android:layout_marginTop="40dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✔ Verified and vetted pros"
+                        android:layout_marginLeft="10dp"
+                        style="?attr/textAppearanceBody1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✔ Matched to your need"
+                        style="?attr/textAppearanceBody1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✔ No Commission"
+                        style="?attr/textAppearanceBody1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✔ 24/7 Customer Support"
+                        style="?attr/textAppearanceBody1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Skip"
+                android:textColor="@color/black"
+                app:cornerRadius="12dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                -->
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.appbar.AppBarLayout>

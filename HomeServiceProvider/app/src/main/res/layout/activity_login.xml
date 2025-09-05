@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+    tools:context=".MainActivity">
+
+    <!-- Phone Number Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        app:startIconDrawable="@android:drawable/ic_menu_call"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Send OTP Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="16dp"
+        app:icon="@android:drawable/ic_menu_send"
+        app:iconGravity="textStart"
+        app:cornerRadius="16dp" />
+
+    <!-- OTP Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Verify OTP Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="16dp"
+        app:icon="@android:drawable/ic_lock_idle_lock"
+        app:iconGravity="textStart"
+        app:cornerRadius="16dp" />
+
+</LinearLayout>

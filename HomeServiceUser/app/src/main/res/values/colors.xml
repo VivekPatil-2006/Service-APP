@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#007BFF</color> <!-- Standard Material Blue -->
+    <color name="primaryDark">#0056b3</color>
+    <color name="primaryLight">#66b0ff</color>
+    <color name="gray">#B0B0B0</color>  <!-- Light Gray for Disabled Button -->
+    <color name="blue">#007BFF</color>  <!-- Active Button Color -->
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#03DAC6</color>
+    <color name="secondaryDark">#03DAC5</color>
+
+    <!-- Material Purple Shades -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#BB86FC</color>
+
+    <!-- Material Teal Shades -->
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_700">#00796B</color>
+
+    <!-- Light Mode Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="textPrimary">#212121</color> <!-- Dark Gray for Text -->
+    <color name="textSecondary">#757575</color> <!-- Light Gray for Secondary Text -->
+
+    <!-- Dark Mode Colors -->
+    <color name="background_dark">#121212</color>
+    <color name="surfaceDark">#1E1E1E</color>
+    <color name="textPrimaryDark">#FFFFFF</color> <!-- White for Dark Mode Text -->
+    <color name="textSecondaryDark">#B0B0B0</color> <!-- Gray for Dark Mode Secondary Text -->
+
+    <!-- Button Colors -->
+    <color name="buttonPrimary">#6200EE</color> <!-- Purple (Material Default) -->
+    <color name="buttonSecondary">#03DAC6</color> <!-- Teal (Material Default) -->
+    <color name="buttonDisabled">#B0B0B0</color> <!-- Gray for Disabled Buttons -->
+
+    <!-- Card Background Colors -->
+    <color name="cardLight">#FFFFFF</color>
+    <color name="cardDark">#1E1E1E</color>
+
+    <!-- Divider & Border Colors -->
+    <color name="dividerLight">#E0E0E0</color>
+    <color name="dividerDark">#373737</color>
+
+    <!-- Error & Warning Colors -->
+    <color name="errorColor">#B00020</color> <!-- Material Red -->
+    <color name="warningColor">#FFA000</color> <!-- Amber Warning -->
+    <color name="successColor">#388E3C</color> <!-- Green for Success -->
+
+    <color name="primaryColor">#6200EE</color> <!-- Purple -->
+    <color name="primaryLightColor">#BB86FC</color> <!-- Light Purple -->
+    <color name="primaryDarkColor">#3700B3</color> <!-- Dark Purple -->
+    <color name="accentColor">#03DAC5</color> <!-- Teal -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light Gray -->
+    <color name="textColorPrimary">#212121</color> <!-- Dark Gray -->
+    <color name="textColorSecondary">#757575</color> <!-- Medium Gray -->
+    <color name="buttonColor">#FF5722</color> <!-- Deep Orange -->
+</resources>

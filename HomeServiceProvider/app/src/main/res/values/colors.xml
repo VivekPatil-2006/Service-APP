@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color> <!-- Material Teal 200 -->
+
+    <!-- Background and Surface Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnBackground">#212121</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <!-- Gray Variants -->
+    <color name="grayLight">#E0E0E0</color>
+    <color name="grayMedium">#BDBDBD</color>
+    <color name="grayDark">#757575</color>
+    <color name="gray">#808080</color> <!-- Standard Gray -->
+
+    <!-- Teal Variants -->
+    <color name="teal_200">#03DAC5</color> <!-- Material Teal 200 -->
+    <color name="teal_700">#018786</color> <!-- Darker Shade -->
+
+    <!-- Error and Success Colors -->
+    <color name="colorError">#B00020</color>
+    <color name="colorSuccess">#4CAF50</color>
+
+    <color name="red">#D32F2F</color>
+    <color name="green">#4CAF50</color>
+    <color name="purple_500">#673AB7</color>
+    <color name="custom_blue">#2196F3</color>
+
+
+</resources>

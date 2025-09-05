@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material 3 -->
+    <style name="Base.Theme.HomeServiceUser" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Main Theme -->
+    <style name="Theme.HomeServiceUser" parent="Base.Theme.HomeServiceUser">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSurfaceVariant">@color/primaryDarkColor</item> <!-- Fixed issue -->
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/accentColor</item>
+        <item name="colorOnSecondary">@color/textColorPrimary</item>
+
+        <!-- Background & Surface -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorSurface">@color/primaryLightColor</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+        <!-- Button Styling -->
+        <item name="buttonStyle">@style/Widget.Material3.Button
+        </item> <!-- Updated for Material3 -->
+    </style>
+</resources>

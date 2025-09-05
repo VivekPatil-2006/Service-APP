@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+    tools:context=".AccountFragment">
+    <!-- AdView Placement -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+    <!-- Material Toolbar for a modern look -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        android:title="Account Settings"
+        android:titleTextColor="@android:color/white"
+        android:elevation="8dp"
+        android:padding="16dp">
+
+        <!-- Small button in the right upper corner -->
+        <ImageButton
+            android:id="@+id/btn_notification"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_dialog_email"
+            android:contentDescription="Notifications"
+            app:tint="@android:color/holo_red_light" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <!-- Scrollable Content with padding -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/purple_500"
+            app:strokeWidth="1dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Buttons with icons and elevation -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate the App"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About App"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Conditions"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    android:strokeColor="@color/purple_500"
+                    app:strokeWidth="2dp"
+                    android:textColor="@color/purple_500"
+                    app:cornerRadius="12dp"
+                    android:layout_marginBottom="12dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

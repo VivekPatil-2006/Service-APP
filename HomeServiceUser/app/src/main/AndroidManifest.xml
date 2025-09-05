@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Features -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <!-- Permissions for Ads -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Other Permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeServiceUser"
+        tools:targetApi="31">
+
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4110811521887503~4768905084"/> <!-- Test App ID -->
+
+
+        <!-- Activities -->
+        <activity android:name=".OtpDisplayActivity" android:exported="false"/>
+        <activity android:name=".EditActivity" android:exported="false"/>
+        <activity android:name=".BookingActivity" android:exported="false"/>
+        <activity android:name=".ServiceProviderListActivity" android:exported="false"/>
+        <activity android:name=".TestServiceActivity" android:exported="false"/>
+        <activity android:name=".PrivacyPolicy" android:exported="false"/>
+        <activity android:name=".TermsConditions" android:exported="false"/>
+        <activity android:name=".AboutApp" android:exported="false"/>
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Login & OTP Verification -->
+        <activity android:name=".LoginActivity" android:exported="true"/>
+        <activity android:name=".OtpVerificationActivity" android:exported="true"/>
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity" android:exported="true"/>
+
+    </application>
+</manifest>

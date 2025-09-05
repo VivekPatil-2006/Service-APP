@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorSurface"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity">
+
+
+
+    <!-- Welcome Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="?attr/colorPrimary">
+
+
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="left"
+            android:padding="16dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- AdView Placement -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Edit Profile"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/custom_blue"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBookings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="View Bookings"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmembership"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Monthly Membership"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Log out"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red"
+        app:cornerRadius="16dp"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white" />
+
+</LinearLayout>
